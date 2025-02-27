@@ -1,5 +1,6 @@
 import express from "express";
 import { PrismaClient } from "@prisma/client";
+import cors from "cors";
 
 const prisma = new PrismaClient();
 
@@ -8,6 +9,7 @@ const port = 3000;
 
 // express estou usando json
 app.use(express.json());
+app.use(cors());
 
 /**
  * STATUS
@@ -76,7 +78,7 @@ app.get("/users", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("Starting server in http://localhost:%d/users", port);
+  console.log("Starting server in http://localhost:%d", port);
 });
 
 /**
