@@ -76,7 +76,7 @@ app.get("/users", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("Starting server in http://localhost:%d", port);
+  console.log("Starting server in http://localhost:%d/users", port);
 });
 
 /**
