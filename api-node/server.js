@@ -80,10 +80,3 @@ app.get("/users", async (req, res) => {
 app.listen(port, () => {
   console.log("Starting server in http://localhost:%d", port);
 });
-
-/**
- * MongoDB
- *
- * victor
- * Xua0l9aVBxDCJlkn
- */
